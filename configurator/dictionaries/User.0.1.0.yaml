@@ -1,0 +1,25 @@
+file_name: User.0.1.0.yaml
+root:
+  name: User
+  description: A User of a social media platform. Some **Users** are **Creators**.
+  type: object
+  properties:
+  - name: _id
+    description: The unique identifier for the User.
+    type: identifier
+  - name: name
+    description: The searchable name of the document
+    type: word
+  - name: description
+    description: The description of the User.
+    type: sentence
+  - name: created
+    description: The tracking breadcrumb for when the document was created.
+    type: breadcrumb
+  - name: saved
+    description: The tracking breadcrumb for when the document was last saved.
+    type: breadcrumb
+  - name: status
+    description: Status of the document
+    type: enum
+    enums: default_status
