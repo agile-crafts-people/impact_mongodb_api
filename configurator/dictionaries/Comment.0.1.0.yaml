@@ -1,0 +1,25 @@
+file_name: Comment.0.1.0.yaml
+root:
+  name: Comment
+  description: A comment, created by a **User**, on a **Post**. A Comment can have **Comments**
+  type: object
+  properties:
+  - name: _id
+    description: The unique identifier for the Comment.
+    type: identifier
+  - name: name
+    description: The searchable name of the document
+    type: word
+  - name: description
+    description: The description of the Comment.
+    type: sentence
+  - name: created
+    description: The tracking breadcrumb for when the document was created.
+    type: breadcrumb
+  - name: saved
+    description: The tracking breadcrumb for when the document was last saved.
+    type: breadcrumb
+  - name: status
+    description: Status of the document
+    type: enum
+    enums: default_status

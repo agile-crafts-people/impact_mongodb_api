@@ -1,0 +1,18 @@
+file_name: Platform.yaml
+description: A social media platform which hosts **Users** and **Posts**.
+versions:
+- version: 0.1.0.0
+  _locked: false
+  add_indexes: 
+  - name: Name Index
+    key:
+      name: 1
+    options:
+      unique: true
+  - name: Last Saved
+    key:
+      saved.at_time: -1
+    options: {}
+  drop_indexes: []
+  migrations: []
+  test_data: Platform.0.1.0.0.json
